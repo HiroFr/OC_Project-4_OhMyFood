@@ -1,0 +1,49 @@
+@import '../style';
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+
+.menu {
+
+  .menu_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 17px;
+    margin-right: 41px;
+
+    h1 {
+      font-family: $font-shrikhand;
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    .fa-heart {
+      font-size: 22px;
+    }
+  }
+
+  .menu_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .menu_card_text {
+
+      h1 {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    h2 {
+      margin: 0;
+    }
+  }
+}
