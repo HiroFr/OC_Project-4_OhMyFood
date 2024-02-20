@@ -99,6 +99,8 @@ header form input:focus {
   border-radius: 20px;
   padding: 0px 30px;
   gap: 20px;
+  position: relative;
+  width: 100%;
 }
 .fonctionnement .fonctionnement_all_card .fonctionnement_card div {
   display: flex;
@@ -109,7 +111,7 @@ header form input:focus {
   width: 24px;
   height: 24px;
   position: absolute;
-  left: 10px;
+  left: -12px;
 }
 .fonctionnement .fonctionnement_all_card .fonctionnement_card div h3 {
   font-weight: 500;
@@ -219,6 +221,28 @@ footer .footer_all p {
   margin: 0;
 }
 
+@media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 0 180px;
+    padding-bottom: 68px;
+  }
+  .fonctionnement_all_card {
+    flex-direction: row !important;
+  }
+  .restaurants {
+    padding: 0 180px;
+    padding-bottom: 66px;
+  }
+  .restaurants_all_card {
+    flex-direction: row !important;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants_card {
+    width: 32em;
+  }
+}
 .logo {
   display: flex;
   align-items: center;
