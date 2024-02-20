@@ -1,24 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-$font-roboto: 'Roboto', sans-serif;
-$font-shrikhand: 'Shrikhand', serif;
-$primary-color: #9356DC;
-/* $secondary-color: ; */
-$background-color: #F6F6F6;
-$green-color: #99E2D0;
-$green-font-color: #008766;
-$white-color: #fff;
-$back-color: #000;
-$grey-dark-color: #353535;
-$grey-light-color: #EAEAEA;
-$gradient-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-
-$title-size-section: 24px;
-$title2-size-section: 18px;
-$paragraph-size-section: 16px;
-$button-size-section: 18px;
-
+@import 'variables.scss';
 
 body {
   margin: 0;
@@ -47,29 +27,26 @@ a {
   }
 }
 
-header {
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 17px 0px;
 
-  form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
+  input {
+    border: none;
     background-color: #EAEAEA;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    padding: 17px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #353535;
+    width: 109px;
+  }
 
-    input {
-      border: none;
-      background-color: #EAEAEA;
-      font-weight: 500;
-      font-size: 16px;
-      color: #353535;
-      width: 33%;
-    }
-
-    input:focus {
-      outline: none;
-    }
+  input:focus {
+    outline: none;
   }
 }
 
@@ -260,36 +237,4 @@ footer {
     gap: 7px;
   }
 
-}
-
-@media (min-width: 1024px) {
-
-  .fonctionnement {
-    padding: 0 180px;
-    padding-bottom: 68px;
-  }
-
-  .fonctionnement_card {
-    width: 100%;
-  }
-
-  .fonctionnement_all_card {
-    flex-direction: row !important;
-  }
-
-  .restaurants {
-    padding: 0 180px;
-    padding-bottom: 66px;
-  }
-
-  .restaurants_all_card {
-    flex-direction: row !important;
-    gap: 50px !important;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .restaurants_card {
-    width: 32em;
-  }
 }

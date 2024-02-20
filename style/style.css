@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* $secondary-color: ; */
 body {
   margin: 0;
   display: flex;
@@ -27,7 +26,7 @@ a {
   font-size: 30px;
 }
 
-header form {
+form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,15 +35,15 @@ header form {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 17px 0px;
 }
-header form input {
+form input {
   border: none;
   background-color: #EAEAEA;
   font-weight: 500;
   font-size: 16px;
   color: #353535;
-  width: 33%;
+  width: 109px;
 }
-header form input:focus {
+form input:focus {
   outline: none;
 }
 
@@ -209,30 +208,4 @@ footer .footer_infos {
   display: flex;
   flex-direction: column;
   gap: 7px;
-}
-
-@media (min-width: 1024px) {
-  .fonctionnement {
-    padding: 0 180px;
-    padding-bottom: 68px;
-  }
-  .fonctionnement_card {
-    width: 100%;
-  }
-  .fonctionnement_all_card {
-    flex-direction: row !important;
-  }
-  .restaurants {
-    padding: 0 180px;
-    padding-bottom: 66px;
-  }
-  .restaurants_all_card {
-    flex-direction: row !important;
-    gap: 50px !important;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .restaurants_card {
-    width: 32em;
-  }
 }/*# sourceMappingURL=style.css.map */
