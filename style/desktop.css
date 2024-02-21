@@ -50,6 +50,7 @@
   }
   footer .footer_all_links .footer_infos {
     flex-direction: row;
+    align-items: center;
   }
   .border_white {
     margin: 0 16em;
@@ -62,5 +63,12 @@
     padding: 0px 200px 50px 200px;
     margin: -40px 16em;
     background-color: #F6F6F6;
+  }
+  .menu .menu_title {
+    justify-content: center;
+    gap: 24px;
+  }
+  .menu_section_title {
+    width: 40px !important;
   }
 }/*# sourceMappingURL=desktop.css.map */
