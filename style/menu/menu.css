@@ -15,8 +15,7 @@
   z-index: 9999;
   animation: fade-out 2s ease 2s forwards; /* Animation de fondu */
 }
-
-.loader {
+.loader-container .loader {
   border: 12px solid #99E2D0;
   border-top: 12px solid #9356DC;
   border-radius: 50%;
@@ -34,12 +33,13 @@
   }
 }
 @keyframes fade-out {
-  0% {
+  from {
     opacity: 1;
   }
-  100% {
+  to {
     opacity: 0;
-    display: none;
+    z-index: -1000;
+    visibility: hidden;
   }
 }
 body {
