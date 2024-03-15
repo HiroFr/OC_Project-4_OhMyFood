@@ -42,7 +42,8 @@
   }
   to {
     opacity: 0;
-    display: none;
+    z-index: -1000;
+    visibility: hidden;
   }
 }
 body {

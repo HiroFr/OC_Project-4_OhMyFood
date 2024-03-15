@@ -46,7 +46,8 @@
   }
   to {
     opacity: 0;
-    display: none;
+    z-index: -1000;
+    visibility: hidden;
   }
 }
 body {
@@ -354,7 +355,8 @@ footer .footer_infos a {
   }
   to {
     opacity: 0;
-    display: none;
+    z-index: -1000;
+    visibility: hidden;
   }
 }
 body {
