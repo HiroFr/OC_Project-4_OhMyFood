@@ -1,0 +1,21 @@
+// Import des différentes parties de la structure
+
+@import 'abstracts/_variables';
+@import 'abstracts/_mixins';
+
+@import 'animation/keyframes';
+@import 'animation/loader';
+
+@import 'base/_typography';
+
+@import 'components/_button';
+@import 'components/_menu_card';
+@import 'components/_logo';
+@import 'components/_selectorGreen';
+@import 'components/heart';
+@import 'components/footer';
+
+@import 'pages/_menu';
+@import 'pages/_homePage';
+
+@import 'breakpoint/_desktop';

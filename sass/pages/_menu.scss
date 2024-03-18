@@ -1,0 +1,79 @@
+.image {
+  position: relative;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+}
+
+.fa-arrow-left {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.border_white {
+  position: relative;
+  top: -40px;
+  padding: 20px 0px;
+  border-radius: 40px 40px 0 0;
+  background-color: $background-color;
+}
+
+.menu {
+  padding: 0px 0px 40px 0px;
+  margin: -40px 0px;
+
+  .menu_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 17px;
+    margin-right: 24px;
+
+    h1 {
+      font-family: $font-shrikhand;
+      font-size: $title-size-section;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  .menu_section {
+    margin: 40px 13px 0px 13px;
+    animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
+    opacity: 0;
+
+    .menu_section_title {
+      font-size: $paragraph-size-section;
+      font-weight: 300;
+      text-transform: uppercase;
+      border-bottom: 3px solid $green-color;
+      width: 11%;
+    }
+
+    .menu_sous_section {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+    }
+  }
+
+  .animate1 {
+    animation-delay: .25s;
+  }
+
+  .animate2 {
+    animation-delay: .5s;
+  }
+
+  .animate3 {
+    animation-delay: 1s;
+  }
+}
+
+.btnCommander {
+  @include flex-center;
+  margin: 40px 0 40px 0;
+}

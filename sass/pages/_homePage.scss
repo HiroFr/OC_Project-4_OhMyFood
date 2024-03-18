@@ -1,53 +1,3 @@
-@import 'variables.scss';
-
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $white-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  animation: fade-out 2s ease 2s forwards; /* Animation de fondu */
-
-  .loader {
-  border: 12px solid $green-color;
-  border-top: 12px solid $primary-color;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 2s linear infinite;
-  animation-name: spin; /* Pour Firefox */
-  animation-duration: 2s; /* Pour Firefox */
-  animation-timing-function: linear; /* Pour Firefox */
-  animation-iteration-count: infinite; /* Pour Firefox */
-
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% { 
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-      z-index: -1000;
-      visibility: hidden;
-    }
-}
-
 body {
   margin: 0;
   display: flex;
@@ -60,19 +10,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.logo {
-  padding: 14px 0px 5px 0px;
-  box-shadow: 0px 2px 4px 0px #00000026;
-
-  h1 {
-    margin: 0;
-    text-align: center;
-    font-family: $font-shrikhand;
-    font-weight: 400;
-    font-size: 30px;
-  }
 }
 
 form {
@@ -115,24 +52,6 @@ form {
     text-align: center;
     font-weight: 100;
     font-size: 18px;
-  }
-
-  button {
-    border-radius: 25px;
-    background: $gradient-color;
-    box-shadow: 0px 4px 10px 0px #00000040;
-    border: none;
-    color: $white-color;
-    font-weight: 500;
-    font-size: 16px;
-    width: 218px;
-    height: 50px;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background: $gradient-color-hover;
-    box-shadow: 0px 4px 15px 0px #00000059;
   }
 }
 
@@ -260,45 +179,6 @@ form {
             font-size: 17px;
             font-weight: 300;
           }
-        }
-
-        .fa-heart {
-          font-size: 22px;
-        }
-        
-        .fa-regular.fa-heart {
-          position: relative;
-          display: inline-block;
-        }
-
-        .restaurants_icon_sup {
-          padding: 0px 15px 0px 0px;
-        }
-        .restaurants_icon_sup .firstheart {
-          font-size: 20px;
-          position: relative;
-          right: -23px;
-          z-index: 1;
-          transition: opacity 0.25s;
-          opacity: 1;
-        }
-        .restaurants_icon_sup .firstheart:hover {
-          opacity: 0;
-        }
-        .restaurants_icon_sup .coeur {
-          background-image: linear-gradient(349deg, #9356dc 0%, #ff79da 110%);
-          color: transparent;
-          font-size: 20px;
-          position: relative;
-          right: 1px;
-          -webkit-background-clip: text;
-          background-clip: text;
-          z-index: 1;
-          transition: opacity 0.25s;
-          opacity: 0;
-        }
-        .restaurants_icon_sup .coeur:hover {
-          opacity: 1;
         }
       }
     }
