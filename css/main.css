@@ -58,6 +58,20 @@
   animation: spin 2s linear infinite; /* Animation Spin 360° */
 }
 
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 button {
   border-radius: 25px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -76,15 +90,22 @@ button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
+.btnCommander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 40px 0;
+}
+
 .menu_card {
   overflow: hidden;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15.04px;
-  padding: 13.5px 15px 13.5px 15px;
+  padding: 13.5px 15px 12.5px 15px;
   background-color: #fff;
   cursor: pointer;
 }
-.menu_card h1 {
+.menu_card h3 {
   margin: 0;
   font-weight: 500;
   font-size: 18px;
@@ -107,7 +128,7 @@ button:hover {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu_card .menu_card_text h2 {
+.menu_card .menu_card_text span {
   margin: 0;
   font-weight: 700;
   font-size: 15px;
@@ -122,16 +143,12 @@ button:hover {
   padding-right: 75px;
   transition: padding-right 0.5s ease;
 }
-.menu_card:hover .menu_card_confirms {
-  opacity: 1;
-  transform: translate(-50px);
-}
-.menu_card:hover .fa-check-circle {
-  transform: rotate(360deg);
-}
 .menu_card:hover .menu_card_confirm {
   margin-right: 0px;
   opacity: 1;
+}
+.menu_card:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
 .menu_card:hover .menu_card_icon {
   transform: rotate(0);
@@ -157,7 +174,7 @@ button:hover {
 
 .menu_card_confirm {
   background-color: #99E2D0;
-  margin: -54px 0px 1px 0px;
+  margin: -55px 0px 1px 0px;
   padding: 13.5px 15px 13.5px 15px;
   width: 40px;
   height: 40px;
@@ -280,10 +297,9 @@ footer {
   gap: 7px;
   padding: 25px 22px;
 }
-footer h1 {
-  font-size: 24px;
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
+footer .logoFooterOhmyfood {
+  filter: invert(1);
+  width: 106px;
 }
 footer .footer_links {
   display: flex;
@@ -306,6 +322,27 @@ footer .footer_infos {
 }
 footer .footer_infos a {
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 17px 0px;
+}
+form input {
+  border: none;
+  background-color: #EAEAEA;
+  font-weight: 500;
+  font-size: 16px;
+  color: #353535;
+  width: 109px;
+}
+form input:focus {
+  outline: none;
 }
 
 .image {
@@ -367,48 +404,6 @@ footer .footer_infos a {
 }
 .menu .animate3 {
   animation-delay: 1s;
-}
-
-.btnCommander {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0 40px 0;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
-  background-color: #F6F6F6;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 17px;
-  background-color: #EAEAEA;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  padding: 17px 0px;
-}
-form input {
-  border: none;
-  background-color: #EAEAEA;
-  font-weight: 500;
-  font-size: 16px;
-  color: #353535;
-  width: 109px;
-}
-form input:focus {
-  outline: none;
 }
 
 .header {
@@ -542,9 +537,9 @@ form input:focus {
 }
 
 @media (min-width: 1440px) {
-  body {
-    background-color: #fff;
-  }
+  /* body {
+      background-color: $white-color;
+    } */
   .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -580,6 +575,9 @@ form input:focus {
     gap: 60px;
     padding: 50px 22px 25px 0px;
   }
+  footer .logoFooterOhmyfood {
+    width: 120px;
+  }
   footer .footer_all_links {
     display: flex;
     gap: 60px;
@@ -614,4 +612,4 @@ form input:focus {
 .image_size {
   width: 100%;
   height: 275px;
-}/*# sourceMappingURL=main.css.map */
+}

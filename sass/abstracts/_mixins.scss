@@ -13,3 +13,9 @@
   width: 100%;
   height: 275px;
 }
+
+@mixin ThreeDots {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

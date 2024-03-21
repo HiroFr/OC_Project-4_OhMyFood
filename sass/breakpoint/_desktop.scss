@@ -1,8 +1,8 @@
 @media (min-width: 1440px) {
 
-  body {
+/* body {
     background-color: $white-color;
-  }
+  } */
   
   .fonctionnement {
     display: flex;
@@ -44,6 +44,10 @@
     align-items: center;
     gap: 60px;
     padding: 50px 22px 25px 0px;
+
+    .logoFooterOhmyfood {
+      width: 120px;
+    }
     
     .footer_all_links {
       display: flex;

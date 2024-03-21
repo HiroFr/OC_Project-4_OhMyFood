@@ -6,10 +6,9 @@ footer {
   gap: 7px;
   padding: 25px 22px;
 
-  h1 {
-    font-size: $title-size-section;
-    font-family: $font-shrikhand;
-    font-weight: 400;
+  .logoFooterOhmyfood {
+    filter: invert(1);
+    width: 106px;
   }
 
   .footer_links {

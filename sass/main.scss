@@ -1,22 +1,13 @@
 // Import des différentes parties de la structure
 
-@import 'abstracts/_variables';
-@import 'abstracts/_mixins';
+@import 'abstracts/_variables', 'abstracts/_mixins';
 
-@import 'animation/keyframes';
-@import 'animation/loader';
+@import 'animation/keyframes', 'animation/loader';
 
-@import 'base/_typography';
+@import 'base/_typography', 'base/base';
 
-@import 'components/_button';
-@import 'components/_menu_card';
-@import 'components/_logo';
-@import 'components/_selectorGreen';
-@import 'components/heart';
-@import 'components/footer';
+@import 'components/_button', 'components/_menu_card', 'components/_logo', 'components/_selectorGreen', 'components/heart', 'components/footer', 'components/searchBar';
 
-@import 'pages/_menu';
-@import 'pages/_homePage';
+@import 'pages/_menu', 'pages/_homePage';
 
-@import 'breakpoint/_desktop';
-@import 'breakpoint/tablet';
+@import 'breakpoint/_desktop', 'breakpoint/tablet';

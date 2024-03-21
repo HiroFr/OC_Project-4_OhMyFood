@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: $grey-light-color;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 17px 0px;
+  
+  input {
+    border: none;
+    background-color: $grey-light-color;
+    font-weight: 500;
+    font-size: 16px;
+    color: $grey-dark-color;
+    width: 109px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+}
