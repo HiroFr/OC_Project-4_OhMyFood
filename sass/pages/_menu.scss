@@ -1,16 +1,11 @@
 .image {
   position: relative;
 
-  img {
+  .image_size {
     object-fit: cover;
     width: 100%;
   }
 
-}
-
-.fa-arrow-left {
-  font-size: 28px;
-  cursor: pointer;
 }
 
 .border_white {
@@ -50,7 +45,7 @@
       font-weight: 300;
       text-transform: uppercase;
       border-bottom: 3px solid $green-color;
-      width: 11%;
+      width: 35px;
     }
 
     .menu_sous_section {

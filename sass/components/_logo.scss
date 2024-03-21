@@ -1,6 +1,18 @@
+.logoHome {
+  padding: 17px 0px 16px 17px;
+  text-align: center;
+}
+
 .logo {
-  display: flex;
-  align-items: center;
+  text-align: center;
   padding: 17px 0px 16px 17px;
   background-color: $white-color;
+
+  .fa-arrow-left {
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin: 0px 10px;
+  }
 }

@@ -137,11 +137,22 @@ button:hover {
   transform: rotate(0);
 }
 
+.logoHome {
+  padding: 17px 0px 16px 17px;
+  text-align: center;
+}
+
 .logo {
-  display: flex;
-  align-items: center;
+  text-align: center;
   padding: 17px 0px 16px 17px;
   background-color: #fff;
+}
+.logo .fa-arrow-left {
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  margin: 0px 10px;
 }
 
 .menu_card_confirm {
@@ -261,18 +272,49 @@ button:hover {
   opacity: 1;
 }
 
+footer {
+  background-color: #353535;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 25px 22px;
+}
+footer h1 {
+  font-size: 24px;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+}
+footer .footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 7px 0px;
+}
+footer .footer_links div a {
+  display: flex;
+  align-items: center;
+}
+footer .footer_links div a p {
+  margin: 0;
+  padding: 0px 11px;
+}
+footer .footer_infos {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer .footer_infos a {
+  cursor: pointer;
+}
+
 .image {
   position: relative;
 }
-.image img {
+.image .image_size {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-}
-
-.fa-arrow-left {
-  font-size: 28px;
-  cursor: pointer;
 }
 
 .border_white {
@@ -310,7 +352,7 @@ button:hover {
   font-weight: 300;
   text-transform: uppercase;
   border-bottom: 3px solid #99E2D0;
-  width: 11%;
+  width: 35px;
 }
 .menu .menu_section .menu_sous_section {
   display: flex;
@@ -499,42 +541,6 @@ form input:focus {
   font-weight: 300;
 }
 
-footer {
-  background-color: #353535;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  padding: 25px 22px;
-}
-footer h1 {
-  font-size: 24px;
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-}
-footer .footer_links {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  padding: 7px 0px;
-}
-footer .footer_links div a {
-  display: flex;
-  align-items: center;
-}
-footer .footer_links div a p {
-  margin: 0;
-  padding: 0px 11px;
-}
-footer .footer_infos {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-footer .footer_infos a {
-  cursor: pointer;
-}
-
 @media (min-width: 1440px) {
   body {
     background-color: #fff;
@@ -588,7 +594,7 @@ footer .footer_infos a {
   .border_white {
     margin: 0 16em;
   }
-  .image img {
+  .image_size {
     width: 100%;
     height: 275px;
   }
@@ -604,4 +610,8 @@ footer .footer_infos a {
   .menu_section_title {
     width: 40px !important;
   }
+}
+.image_size {
+  width: 100%;
+  height: 275px;
 }/*# sourceMappingURL=main.css.map */

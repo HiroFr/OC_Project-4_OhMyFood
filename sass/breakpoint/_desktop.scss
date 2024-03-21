@@ -64,11 +64,8 @@
     margin: 0 16em;
   }
   
-  .image {
-    img {
-      width: 100%;
-      height: 275px;
-    }  
+  .image_size {
+    @include imageSize;
   }
   
   .menu {
