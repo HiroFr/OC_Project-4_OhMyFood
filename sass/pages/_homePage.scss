@@ -11,7 +11,7 @@
     margin-top: 39px;
   }
 
-  p {
+  h2 {
     text-align: center;
     font-weight: 100;
     font-size: 18px;
@@ -23,7 +23,7 @@
   padding-bottom: 68px;
   background-color: $white-color;
 
-  h1 {
+  h3 {
     padding: 48px 0px 26px 0px;
     margin: 0;
     width: 100%;
@@ -57,7 +57,7 @@
         position: absolute;
         left: -12px;
 
-        h3 {
+        h4 {
           font-weight: 500;
           font-size: 14.18px;
           color: $white-color;
@@ -131,7 +131,7 @@
         .restaurants_description {
           padding-left: 13px;    
 
-          h2 {
+          h4 {
             margin: 0;
             font-size: $title2-size-section;
             font-weight: 700;

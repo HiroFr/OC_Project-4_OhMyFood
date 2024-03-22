@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OhMyFood est un site de réservation de menu fictif" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,37 +18,37 @@
   <div class="logoHome">
     <img class="logoOhmyfood" src="../assets/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
   </div>
-  <form action="">
+  <div class="searchBar">
     <i class="fa-solid fa-location-dot"></i>
-    <input type="text" value="Paris, Bellevile">
-  </form>
+    <input type="text" aria-label="Search" value="Paris, Bellevile">
+  </div>
   <section class="header">
     <h1>Réservez le menu qui vous convient</h1>
-    <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
-    <a href="#resto">
-      <button type="button">Explorer nos restaurants</button>
-    </a>
+    <h2>Découvrez des restaurants d'exception sélectionnés par nos soins</h2>
+    <button type="button">
+      <a href="#resto">Explorer nos restaurants</a>
+    </button>
   </section>
   <section class="fonctionnement">
-    <h1>Fonctionnement</h1>
+    <h3>Fonctionnement</h3>
     <div class="fonctionnement_all_card">
       <div class="fonctionnement_card">
         <div>
-          <h3>1</h3>
+          <h4>1</h4>
         </div>
         <i class="fa-solid fa-mobile-screen-button fa-color-purple"></i>
         <p>Choisissez un restaurant</p>
       </div>
       <div class="fonctionnement_card">
         <div>
-          <h3>2</h3>
+          <h4>2</h4>
         </div>
         <i class="fa-solid fa-list fa-color-purple"></i>
         <p>Composez votre menu</p>
       </div>
       <div class="fonctionnement_card">
         <div>
-          <h3>3</h3>
+          <h4>3</h4>
         </div>
         <i class="fa-solid fa-store fa-color-purple"></i>
         <p>Dégustez au restaurant</p>
@@ -55,7 +56,7 @@
     </div>
   </section>
   <section class="restaurants" id="resto">
-    <h1>Restaurants</h1>
+    <h3>Restaurants</h3>
     <div class="restaurants_all_card">
       <a href="menu/la-palette-du-gout.html">
         <div class="restaurants_card">
@@ -65,7 +66,7 @@
           </div>
           <div class="restaurants_ensemble_description">
             <div class="restaurants_description">
-              <h2>La palette du goût</h2>
+              <h4>La palette du goût</h4>
               <p>Ménilmontant</p>
             </div>
             <div class="restaurants_icon_sup">
@@ -83,7 +84,7 @@
           </div>
           <div class="restaurants_ensemble_description">
             <div class="restaurants_description">
-              <h2>La note enchantée</h2>
+              <h4>La note enchantée</h4>
               <p>Charonne</p>
             </div>
             <div class="restaurants_icon_sup">
@@ -98,7 +99,7 @@
           <img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image">
           <div class="restaurants_ensemble_description">
             <div class="restaurants_description">
-              <h2>À la française</h2>
+              <h4>À la française</h4>
               <p>Cité Rouge</p>
             </div>
             <div class="restaurants_icon_sup">
@@ -113,7 +114,7 @@
           <img src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image">
           <div class="restaurants_ensemble_description">
             <div class="restaurants_description">
-              <h2>Les délice des sens</h2>
+              <h4>Les délice des sens</h4>
               <p>Folie-Méricourt</p>
             </div>
             <div class="restaurants_icon_sup">

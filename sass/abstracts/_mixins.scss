@@ -19,3 +19,8 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+@mixin linkReset {
+  color: inherit;
+  text-decoration: none;
+}

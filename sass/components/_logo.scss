@@ -8,11 +8,18 @@
   padding: 17px 0px 16px 17px;
   background-color: $white-color;
 
-  .fa-arrow-left {
-    font-size: 28px;
-    cursor: pointer;
+  .a-arrow {
+    @include linkReset;
     position: absolute;
+    top: 0;
     left: 0;
-    margin: 0px 10px;
+  
+    .fa-arrow-left {
+      font-size: 28px;
+      cursor: pointer;
+      padding: 25px;
+      width: 48px;
+      height: 48px;
+    }
   }
 }

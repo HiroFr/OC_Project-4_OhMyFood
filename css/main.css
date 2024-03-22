@@ -94,7 +94,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0 40px 0;
+  margin: 40px auto;
 }
 
 .menu_card {
@@ -164,12 +164,19 @@ button:hover {
   padding: 17px 0px 16px 17px;
   background-color: #fff;
 }
-.logo .fa-arrow-left {
+.logo .a-arrow {
+  color: inherit;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo .a-arrow .fa-arrow-left {
   font-size: 28px;
   cursor: pointer;
-  position: absolute;
-  left: 0;
-  margin: 0px 10px;
+  padding: 25px;
+  width: 48px;
+  height: 48px;
 }
 
 .menu_card_confirm {
@@ -324,7 +331,7 @@ footer .footer_infos a {
   cursor: pointer;
 }
 
-form {
+.searchBar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,7 +340,7 @@ form {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 17px 0px;
 }
-form input {
+.searchBar input {
   border: none;
   background-color: #EAEAEA;
   font-weight: 500;
@@ -341,7 +348,7 @@ form input {
   color: #353535;
   width: 109px;
 }
-form input:focus {
+.searchBar input:focus {
   outline: none;
 }
 
@@ -418,7 +425,7 @@ form input:focus {
   margin: 0;
   margin-top: 39px;
 }
-.header p {
+.header h2 {
   text-align: center;
   font-weight: 100;
   font-size: 18px;
@@ -429,7 +436,7 @@ form input:focus {
   padding-bottom: 68px;
   background-color: #fff;
 }
-.fonctionnement h1 {
+.fonctionnement h3 {
   padding: 48px 0px 26px 0px;
   margin: 0;
   width: 100%;
@@ -462,7 +469,7 @@ form input:focus {
   position: absolute;
   left: -12px;
 }
-.fonctionnement .fonctionnement_all_card .fonctionnement_card div h3 {
+.fonctionnement .fonctionnement_all_card .fonctionnement_card div h4 {
   font-weight: 500;
   font-size: 14.18px;
   color: #fff;
@@ -506,7 +513,7 @@ form input:focus {
 }
 .restaurants .restaurants_all_card .restaurants_card .restaurants_chips_green {
   background-color: #99E2D0;
-  color: #008766;
+  color: #004534;
   padding: 6px 9px;
   width: 4em;
   font-weight: 500;
@@ -525,7 +532,7 @@ form input:focus {
 .restaurants .restaurants_all_card .restaurants_card .restaurants_ensemble_description .restaurants_description {
   padding-left: 13px;
 }
-.restaurants .restaurants_all_card .restaurants_card .restaurants_ensemble_description .restaurants_description h2 {
+.restaurants .restaurants_all_card .restaurants_card .restaurants_ensemble_description .restaurants_description h4 {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
@@ -612,4 +619,4 @@ form input:focus {
 .image_size {
   width: 100%;
   height: 275px;
-}
+}/*# sourceMappingURL=main.css.map */
