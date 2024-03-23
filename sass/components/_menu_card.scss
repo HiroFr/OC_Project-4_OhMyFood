@@ -2,20 +2,21 @@
   overflow: hidden;
   box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
   border-radius: 15.04px;
-  padding: 13.5px 15px 12.5px 15px;
   background-color: $white-color;
+  padding: 13.5px 15px 12.5px 15px;
   cursor: pointer;
-
-  h3 {
-    margin: 0;
-    font-weight: 500;
-    font-size: $button-size-section;
-    @include ThreeDots;
-  }
+  display: flex;
 
   .menu_card_text {
-    @include flex-between;
     @include ThreeDots;
+    flex: 1;
+
+    h3 {
+      margin: 0;
+      font-weight: 500;
+      font-size: $button-size-section;
+      @include ThreeDots;
+    }
 
     p {
       margin: 0;
@@ -23,35 +24,22 @@
       font-size: 15px;
       @include ThreeDots;
     }
+  }
+
+  .euro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     span {
       margin: 0;
       font-weight: 700;
       font-size: 15px;
-      padding: 0px 8px;
     }
   }
 
   .fa-check-circle {
     color: #fff;
     transition: transform 500ms ease-in-out;
-  }
-}
-
-.menu_card:hover {
-  padding-right: 75px;
-  transition: padding-right 0.5s ease;
-
-  .menu_card_confirm {
-    margin-right: 0px;
-    opacity: 1;
-  }
-
-  .fa-check-circle {
-    transform: rotate(360deg);
-  }
-
-  .menu_card_icon {
-    transform: rotate(0);
   }
 }

@@ -68,14 +68,10 @@
     margin: 0 16em;
   }
   
-  .image_size {
-    @include imageSize;
-  }
-  
   .menu {
     padding: 0px 200px 50px 200px;
     margin: -40px 16em;
-    background-color: $background-color;
+    background-color: $background-grey-color;
 
     .menu_title {
       justify-content: center;

@@ -1,17 +1,8 @@
 .menu_card_confirm {
   background-color: $green-color;
-  margin: -55px 0px 1px 0px;
-  padding: 13.5px 15px 13.5px 15px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  opacity: 0;
-  right: -40px;
-  border-top-right-radius: 15.04px;
-  border-bottom-right-radius: 15.04px;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  @include flex-center;
   transition: transform 0.5s ease-in-out; /* Transition pour la réinitialisation */
 }
 
@@ -19,9 +10,7 @@
   height: 1.6rem;
   width: 1.6rem;
   background-color: $white-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   border-radius: 100px;
   transform: rotate(180deg);
   transition-duration: .5s;
@@ -31,14 +20,24 @@
   color: $green-color;
 }
 
+/* Application de l'animation lors du survol */
 .menu_card:hover {
+
+  .fa-check-circle {
+    transform: rotate(360deg);
+  }
+
+  .menu_card_icon {
+    transform: rotate(0);
+  }
+
+  .euro {
+    span {
+      animation: slideGreen 0.5s forwards;
+    }
+  }
   .menu_card_confirm {
-    /* Application de l'animation lors du survol */
+    margin-right:-1rem;
     animation: slideGreen 0.5s forwards; /* Utilisation de forwards pour conserver l'état final */
   }
 } 
-
-.menu_card_confirm:not(:hover) {
-  /* Réinitialisation de l'animation lorsque la carte n'est pas survolée */
-  transform: translateX(40px); /* Retour à la position initiale */
-}

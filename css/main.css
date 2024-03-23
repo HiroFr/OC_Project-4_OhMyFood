@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Animation pour agrandir les entrées, plats et desserts */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @keyframes move-card {
@@ -10,14 +11,16 @@
     opacity: 1;
   }
 }
+/* Animation pour le selecteur vert */
 @keyframes slideGreen {
   0% {
-    transform: translateX(40px);
+    transform: translateX(1rem);
   }
   100% {
-    transform: translateX(-40px);
+    transform: translateX(0rem);
   }
 }
+/* Aniamtion pour le loader */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -26,6 +29,7 @@
     transform: rotate(360deg);
   }
 }
+/* Animation pour la transition à la fin du loader */
 @keyframes fade-out {
   from {
     opacity: 1;
@@ -64,7 +68,7 @@ body {
   justify-content: center;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  background-color: #F6F6F6;
+  background-color: #fff;
 }
 
 a {
@@ -101,21 +105,21 @@ button:hover {
   overflow: hidden;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15.04px;
-  padding: 13.5px 15px 12.5px 15px;
   background-color: #fff;
+  padding: 13.5px 15px 12.5px 15px;
   cursor: pointer;
+  display: flex;
 }
-.menu_card h3 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
+.menu_card .menu_card_text {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  flex: 1;
 }
-.menu_card .menu_card_text {
-  display: flex;
-  justify-content: space-between;
+.menu_card .menu_card_text h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -128,30 +132,19 @@ button:hover {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu_card .menu_card_text span {
+.menu_card .euro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.menu_card .euro span {
   margin: 0;
   font-weight: 700;
   font-size: 15px;
-  padding: 0px 8px;
 }
 .menu_card .fa-check-circle {
   color: #fff;
   transition: transform 500ms ease-in-out;
-}
-
-.menu_card:hover {
-  padding-right: 75px;
-  transition: padding-right 0.5s ease;
-}
-.menu_card:hover .menu_card_confirm {
-  margin-right: 0px;
-  opacity: 1;
-}
-.menu_card:hover .fa-check-circle {
-  transform: rotate(360deg);
-}
-.menu_card:hover .menu_card_icon {
-  transform: rotate(0);
 }
 
 .logoHome {
@@ -161,38 +154,25 @@ button:hover {
 
 .logo {
   text-align: center;
-  padding: 17px 0px 16px 17px;
+  padding: 17px 0px;
   background-color: #fff;
 }
-.logo .a-arrow {
-  color: inherit;
-  text-decoration: none;
+.logo .fa-arrow-left {
+  font-size: 28px;
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
-}
-.logo .a-arrow .fa-arrow-left {
-  font-size: 28px;
-  cursor: pointer;
-  padding: 25px;
-  width: 48px;
-  height: 48px;
+  margin: 17px;
 }
 
 .menu_card_confirm {
   background-color: #99E2D0;
-  margin: -55px 0px 1px 0px;
-  padding: 13.5px 15px 13.5px 15px;
-  width: 40px;
-  height: 40px;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: absolute;
-  opacity: 0;
-  right: -40px;
-  border-top-right-radius: 15.04px;
-  border-bottom-right-radius: 15.04px;
+  align-items: center;
   transition: transform 0.5s ease-in-out; /* Transition pour la réinitialisation */
 }
 
@@ -201,8 +181,8 @@ button:hover {
   width: 1.6rem;
   background-color: #fff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-radius: 100px;
   transform: rotate(180deg);
   transition-duration: 0.5s;
@@ -212,14 +192,19 @@ button:hover {
   color: #99E2D0;
 }
 
-.menu_card:hover .menu_card_confirm {
-  /* Application de l'animation lors du survol */
-  animation: slideGreen 0.5s forwards; /* Utilisation de forwards pour conserver l'état final */
+/* Application de l'animation lors du survol */
+.menu_card:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
-
-.menu_card_confirm:not(:hover) {
-  /* Réinitialisation de l'animation lorsque la carte n'est pas survolée */
-  transform: translateX(40px); /* Retour à la position initiale */
+.menu_card:hover .menu_card_icon {
+  transform: rotate(0);
+}
+.menu_card:hover .euro span {
+  animation: slideGreen 0.5s forwards;
+}
+.menu_card:hover .menu_card_confirm {
+  margin-right: -1rem;
+  animation: slideGreen 0.5s forwards; /* Utilisation de forwards pour conserver l'état final */
 }
 
 .fa-heart {
@@ -259,40 +244,6 @@ button:hover {
   opacity: 0;
 }
 .restaurants_icon_sup .secondHeart:hover {
-  opacity: 1;
-}
-
-.restaurants_icon_sup {
-  padding: 0px 15px 0px 0px;
-}
-
-.restaurants_icon_sup .firstheart {
-  font-size: 20px;
-  position: relative;
-  right: -23px;
-  z-index: 1;
-  transition: opacity 0.25s;
-  opacity: 1;
-}
-
-.restaurants_icon_sup .firstheart:hover {
-  opacity: 0;
-}
-
-.restaurants_icon_sup .coeur {
-  background-image: linear-gradient(349deg, #9356dc 0%, #ff79da 110%);
-  color: transparent;
-  font-size: 20px;
-  position: relative;
-  right: 1px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  z-index: 1;
-  transition: opacity 0.25s;
-  opacity: 0;
-}
-
-.restaurants_icon_sup .coeur:hover {
   opacity: 1;
 }
 
@@ -339,6 +290,7 @@ footer .footer_infos a {
   background-color: #EAEAEA;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 17px 0px;
+  z-index: 1;
 }
 .searchBar input {
   border: none;
@@ -359,6 +311,7 @@ footer .footer_infos a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 275px;
 }
 
 .border_white {
@@ -372,6 +325,7 @@ footer .footer_infos a {
 .menu {
   padding: 0px 0px 40px 0px;
   margin: -40px 0px;
+  background-color: #F6F6F6;
 }
 .menu .menu_title {
   display: flex;
@@ -417,13 +371,15 @@ footer .footer_infos a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 20px;
-  margin-bottom: 54px;
+  padding: 0px 20px;
+  padding-bottom: 54px;
+  background-color: #F6F6F6;
 }
 .header h1 {
   text-align: center;
   margin: 0;
   margin-top: 39px;
+  font-size: 40px;
 }
 .header h2 {
   text-align: center;
@@ -434,9 +390,9 @@ footer .footer_infos a {
 .fonctionnement {
   padding: 0px 20px;
   padding-bottom: 68px;
-  background-color: #fff;
 }
 .fonctionnement h3 {
+  font-size: 24px;
   padding: 48px 0px 26px 0px;
   margin: 0;
   width: 100%;
@@ -485,9 +441,11 @@ footer .footer_infos a {
 .restaurants {
   padding: 0px 20px;
   padding-bottom: 66px;
+  background-color: #F6F6F6;
 }
-.restaurants h1 {
+.restaurants h3 {
   margin: 0;
+  font-size: 24px;
   padding-top: 54px;
   padding-bottom: 30px;
   width: 100%;
@@ -599,10 +557,6 @@ footer .footer_infos a {
   .border_white {
     margin: 0 16em;
   }
-  .image_size {
-    width: 100%;
-    height: 275px;
-  }
   .menu {
     padding: 0px 200px 50px 200px;
     margin: -40px 16em;
@@ -615,8 +569,4 @@ footer .footer_infos a {
   .menu_section_title {
     width: 40px !important;
   }
-}
-.image_size {
-  width: 100%;
-  height: 275px;
 }/*# sourceMappingURL=main.css.map */

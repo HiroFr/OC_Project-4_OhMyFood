@@ -1,3 +1,4 @@
+/* Animation pour agrandir les entrées, plats et desserts */
 @keyframes move-card {
   0% {
     scale: 0;
@@ -8,15 +9,17 @@
   }
 }
 
+/* Animation pour le selecteur vert */
 @keyframes slideGreen {
   0% {
-    transform: translateX(40px);
+    transform: translateX(1rem);
   }
   100% {
-    transform: translateX(-40px);
+    transform: translateX(0rem);
   }
 }
 
+/* Aniamtion pour le loader */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -26,6 +29,7 @@
   }
 }
 
+/* Animation pour la transition à la fin du loader */
 @keyframes fade-out {
   from {
     opacity: 1;
