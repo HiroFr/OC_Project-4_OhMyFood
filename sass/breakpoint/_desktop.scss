@@ -1,4 +1,4 @@
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
 
 /* body {
     background-color: $white-color;
@@ -32,11 +32,11 @@
     gap: 50px !important;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1080px;
+    max-width: 1024px;
   }
   
   .restaurants_card {
-    width: 32em;
+    width: 29em;
   }
   
   footer {
@@ -65,12 +65,12 @@
   }
 
   .border_white {
-    margin: 0 16em;
+    margin: 0 8em;
   }
   
   .menu {
-    padding: 0px 200px 50px 200px;
-    margin: -40px 16em;
+    padding: 0px 100px 50px 100px;
+    margin: -40px 8em;
     background-color: $background-grey-color;
 
     .menu_title {

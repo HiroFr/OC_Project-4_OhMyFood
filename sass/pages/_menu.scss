@@ -40,6 +40,7 @@
     margin: 40px 13px 0px 13px;
     animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
     opacity: 0;
+    scale: 0;
 
     .menu_section_title {
       font-size: $paragraph-size-section;

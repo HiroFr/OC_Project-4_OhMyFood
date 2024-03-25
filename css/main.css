@@ -3,9 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @keyframes move-card {
-  0% {
-    scale: 0;
-  }
   100% {
     scale: 1;
     opacity: 1;
@@ -344,6 +341,7 @@ footer .footer_infos a {
   margin: 40px 13px 0px 13px;
   animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
   opacity: 0;
+  scale: 0;
 }
 .menu .menu_section .menu_section_title {
   font-size: 16px;
@@ -501,7 +499,7 @@ footer .footer_infos a {
   font-weight: 300;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   /* body {
       background-color: $white-color;
     } */
@@ -529,10 +527,10 @@ footer .footer_infos a {
     gap: 50px !important;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1080px;
+    max-width: 1024px;
   }
   .restaurants_card {
-    width: 32em;
+    width: 29em;
   }
   footer {
     flex-direction: row-reverse;
@@ -555,11 +553,11 @@ footer .footer_infos a {
     align-items: center;
   }
   .border_white {
-    margin: 0 16em;
+    margin: 0 8em;
   }
   .menu {
-    padding: 0px 200px 50px 200px;
-    margin: -40px 16em;
+    padding: 0px 100px 50px 100px;
+    margin: -40px 8em;
     background-color: #F6F6F6;
   }
   .menu .menu_title {
